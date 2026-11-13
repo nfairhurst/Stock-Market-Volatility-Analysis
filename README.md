@@ -17,14 +17,19 @@ We'll keep the original files separate from our cleaned data.
 
 ## Measuring Volatility
 
-We'll measure daily price fluctuations using:\
-$$\text{Daily Price Range (\%)} = \frac{H-L}{O} \times 100$$
+We'll measure daily price fluctuations using the following formula:
+
+**Daily Price Range (%)**
+
+```math
+\frac{H-L}{O} \times 100
+```
 
 Where:
 - **H** = Highest daily price
 - **L** = Lowest daily price
 - **O** = Opening price
-- 
+
 ## Our Plan
 
 1. **Clean the data:** Check for missing values, duplicates, invalid prices, and possible outliers. Match stocks to their sectors and identify each date's weekday and year.
